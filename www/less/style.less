@@ -60,6 +60,9 @@
 html {
 	font-size: 10px;
 }
+body {
+ .reg();
+}
 .btn {
 	padding: 1rem 3rem;
 	border-radius: 8px;
@@ -67,8 +70,15 @@ html {
 	font-size: 1.3rem;
 	background-color: @btn-color;
 	color: @light;
+	
 	text-transform: uppercase;
- border: none;
+     border: none;
+     transition: all 0.5s;
+ &:hover {
+ 	cursor: pointer;
+ 	background-color: darken(@btn-color, 7%);
+     
+ }
 }	
 
 
@@ -144,7 +154,7 @@ background-size: cover;
   width: 100%;
   margin: 2.5rem 0;
   border: 1px solid @border-input;
-  padding: 1.5rem;
+  padding: 2rem;
  }
       /*подписи к полям*/
  label {
@@ -160,7 +170,11 @@ background-size: cover;
  	height: 5.5rem;
  	width: 100%;
  	font-size: 1.6rem;
- }            
+
+ }
+ 	
+	
+             
             /*подпись под кнопкой*/ 
  small {
  	display: block;
@@ -189,7 +203,28 @@ height: 7rem;
 line-height: 7rem;
 color: @text;
 text-decoration: none;
-
-
 }
+
+@media (max-width: 991px) {
+.main {
+background-position: top right;	
+}
+.main-title {
+text-align: center;
+margin-bottom: 5rem;
+}
+}
+@media (max-width: 767px) {
+.main-title {
+ margin:10rem 0 5rem 0;	
+}	
+ .header {	
+ text-align: center;
+} 
+} 
+ 	 
+
+
+ 
+	
 

@@ -43,6 +43,9 @@
 html {
   font-size: 10px;
 }
+body {
+  font-family: 'ProximaNova_Reg', sans-serif;
+}
 .btn {
   padding: 1rem 3rem;
   border-radius: 8px;
@@ -52,6 +55,12 @@ html {
   color: #ffffff;
   text-transform: uppercase;
   border: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #d69702;
 }
 /*типография*/
 section {
@@ -124,7 +133,7 @@ section {
   width: 100%;
   margin: 2.5rem 0;
   border: 1px solid #dddddd;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 .main-form label {
   position: absolute;
@@ -164,4 +173,21 @@ section {
   line-height: 7rem;
   color: #1a1820;
   text-decoration: none;
+}
+@media (max-width: 991px) {
+  .main {
+    background-position: top right;
+  }
+  .main-title {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .main-title {
+    margin: 10rem 0 5rem 0;
+  }
+  .header {
+    text-align: center;
+  }
 }
