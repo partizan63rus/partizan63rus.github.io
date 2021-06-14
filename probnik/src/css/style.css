@@ -1,0 +1,20 @@
+/*img{
+  min-width: 100%; 
+  height: auto;
+}*/
+.box {
+  background: #ffffff url(../img/111.jpg) ;
+}
+.header {
+  display: block;
+  font-size: 25px;
+  color: #fff;
+  padding: 0;
+position: relative;
+  z-index: 3;
+}
+.fotorama {
+  margin: -40px;
+  padding: 0;
+  z-index: 2;
+}
