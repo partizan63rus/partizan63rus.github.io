@@ -62,6 +62,7 @@ html {
 }
 body {
  .reg();
+
 }
 .btn {
 	padding: 1rem 3rem;
@@ -86,6 +87,12 @@ body {
 
 section {
 	padding: 10rem 0;
+}
+.section-header {
+margin: 2rem 0 13rem ;
+.bold();
+font-size: 3.6rem;
+text-align: center;	
 }
 
                    /*main*/
@@ -206,6 +213,34 @@ color: @text;
 text-decoration: none;
 }
 
+/*оформление слайдера*/
+.features {
+&-block {
+text-align: center;
+h3 {
+.bold();
+font-size: 2rem;
+margin-top: 6rem;
+margin-bottom: 3.6rem;	
+}
+p {
+display: inline-block;
+width: 80%;	
+font-size: 1.4rem;	
+}
+}	
+
+&-img {
+	
+img {
+display: block;
+height: 6.2rem;
+margin: 0 auto;
+
+}	
+}	
+}
+
 @media (max-width: 991px) {
 .main {
 background-position: top right;	
@@ -229,6 +264,13 @@ padding: 3.4rem 0 4.6rem 0;
  text-align: center;
 } 
 }
+.slick-active {
+outline: none;
+}
+
+
+
+
 @media (max-width: 575px) {
  html{
 font-size: 6px;
