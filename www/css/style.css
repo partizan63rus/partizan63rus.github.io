@@ -194,6 +194,26 @@ section {
 }
 @media (max-width: 575px) {
   html {
-    font-size: 7px;
+    font-size: 6px;
+  }
+  .main {
+    background-position: top right;
+  }
+  .wrap-block {
+    display: inline-block;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 6px;
+  }
+  .main {
+    background-position: top right;
+  }
+  .phone-link {
+    display: inline-block;
+  }
+  .wrap-block {
+    display: inline-block;
   }
 }
