@@ -37,7 +37,7 @@
                         order-sm-1 order-lg-3">
        <div class="wrap">
         <div class="wrap-block">
-         <button class="btn w-100">
+         <button class="btn w-100 popup-btn">
            получить инструкцию
          </button>
         </div>
@@ -140,6 +140,40 @@
       
     </div>
    </section>
+
+
+
+
+
+
+   <!-- модальные окна -->
+
+   <!-- получиь консульацию -->
+   <!-- само модальное окно -->
+   <div class="popup">
+    <!-- само (белое) мод. окно -->
+     <div class="popup-dialog">
+      <!-- содержимое мод. окно -->
+       <div class="popup-content">
+         <button class="popup-close">&times;</button>
+         <h4 class="popup-header">
+           Заинтересовало?
+         </h4>
+         <p>
+           Оставьте контактные данные <br>для связи</p>
+          <div class="main-form popup-form"></div>
+          <form action="#">
+            <label for="#">Ваше имя</label>
+            <input class="main-form-input" type="text">
+            <label for="#">Номер телефона </label> 
+            <input class="main-form-input" type="text">
+            <label for="#">Сообщения</label> 
+            <textarea class="main-form-input" rows="5"></textarea>
+            <button class="main-form-btn btn" type="sumbit">Оставьте заявку</button>
+          </form>
+       </div>
+     </div>
+   </div>
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <!-- подключаем стили слик слайдер -->
@@ -149,7 +183,15 @@
    <script src="slick/slick.min.js"></script>
    <!-- инициализируем слайдер -->
    <script>
-      $(document).ready(function(){
+  $(document).ready(function(){
+    $('.popup-btn').on('click', function(event) {
+     event.preventDefault();
+     $('.popup').fadeIn();
+    });
+    $('.popup-close').on('click', function(event) {
+      event.preventDefault();
+      $('.popup').fadeOut();
+    });
     $('.features-slider').slick({
       infinite: true,
       slidesToShow: 4,
