@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-  <link href="css/bootstrap.css" rel="stylesheet" >
-	<link href="css/style.css" rel="stylesheet" >
-</head>
-<body>
-
-<div class="header">	
-<button class="btn btn-info">
-  модальное окно
-</button>
-</div>
-
-<div class="popup">
-  <div class="popup-dialog">
-    <div class="popup-content">
-      <div class="popup-header">
-        <h3>Вы готовы дети?</h3>
-      </div>
-      <div class="popup-main">
-        <p>Вы точно готовы дети?<br>Вы точно уверены дети?</p>
-      </div> 
-      <div class="popup-footer">
-        <button class="btn-success">Да капитан!</button>
-        <button class="btn-danger">Никак нет капитан!</button>
-      </div>
-     </div>
-  </div>
-</div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
     
-      
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Ответы на вопросы</h1>
+      <h3>Которые нам задают чаще всего</h3>
+    </div>
    
+  <div class="page" id="accordeon">
+      <div class="acc-head">
+        <p>Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</p>
+      </div>
+      <div class="acc-body">
+        <p>Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</p>
+      </div>
+      <div class="acc-head">
+        <p>Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</p>
+      </div>
+      <div class="acc-body">
+        Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.
+      </div>
+      <div class="acc-head">
+        <p>Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</p>
+      </div>
+      <div class="acc-body">
+        Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.
+      </div>
+       <div class="acc-head">
+        <p>Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</p>
+      </div>
+      <div class="acc-body">
+        Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.
+      </div>
+       <div class="acc-head">
+        <p>Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</p>
+      </div>
+      <div class="acc-body">
+        Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.
+      </div>
+  </div>
 
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
 
 <script>
-  $(document).ready(function(){
-    $('.btn').on('click', function(event) {
-     event.preventDefault();
-     $('.popup').fadeIn();
-    });
-    $('.btn-success').on('click', function(event) {
-      event.preventDefault();
-      $('.popup').fadeOut();
-    });
-    $('.btn-danger').on('click', function(event) {
-      event.preventDefault();
-      $('.popup').fadeOut();
-    });
-  });
+   $(document).ready(function() {
+  //прикрепляем клик по заголовкам acc-head
+  $('#accordeon .acc-head').on('click', f_acc);
+});
+
+function f_acc(){
+//скрываем все кроме того, что должны открыть
+  $('#accordeon .acc-body').not($(this).next()).slideUp(1000);
+// открываем или скрываем блок под заголовоком, по которому кликнули
+    $(this).next().slideToggle(2000);
+}
 </script>
 
-
-
-
-</body>
+    
+  </body>
 </html>
