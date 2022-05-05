@@ -98,9 +98,17 @@ section {
 	padding: 10rem 0;
 }
 .section-header {
+  &_light {
+     color: @light;
+  }   
+  h2{
+   .bold();
+      font-size: 3.6rem;
+    }
+  p{
+     font-size: 1.8rem;
+  }       
 margin: 2rem 0 10rem ;
-.bold();
-font-size: 3.6rem;
 text-align: center;	
 }
 
@@ -275,6 +283,74 @@ background-size: 70%;
 }
 
 
+/*блок с ценами*/
+.price {
+ background: #286c0a url(../img/prices.jpg) center;
+ &-btn{
+     text-align: right;
+ }
+  p{
+   margin-top: 2rem; 
+  } 
+  &-header-btn{
+   margin-top: 4rem;
+
+  }
+  /*оформление прайс листа*/
+ &-block {
+   padding: 1rem 3rem 4rem; 
+   min-height: 65rem; 
+   background-color: @light; 
+   box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+   text-align: center;
+ h4 { 
+   margin: 3rem 0;  
+   font-size: 1.9rem;
+   .bold() ;  
+ }
+ img {
+   width: 100%;
+   max-width: 30rem;  
+   display: inline-block;
+   margin-bottom: 1rem;  
+ }
+ }
+ &-tag { 
+   display: block;
+   margin-bottom: 2rem;   
+   font-size: 1.9rem;
+   .bold();
+ } 
+ &-list {
+   padding: 0;
+   margin-bottom: 3rem;
+   list-style: none; 
+   min-height: 14rem; 
+   font-size: 1.6rem;
+   line-height: 3rem;
+li{
+   &:before{
+    content: '';
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: url(../img/like.svg) no-repeat center ; 
+    background-size: 90%;
+    margin-right: 0.6rem;
+    vertical-align: middle;
+    
+   }  
+ }
+}
+}
+   
+  
+ 
+  
+ 
+ 
+
+
 /*оформление мод. окна*/
 .popup {
  display: none;	
@@ -329,6 +405,22 @@ background-position: top right;
 .main-title {
 text-align: center;
 margin-bottom: 5rem;
+}
+.price{
+&-btn{
+text-align: center;
+ padding: 3rem 0;
+   } 
+ &-header-btn{
+ margin-top: 0;
+ margin-bottom: 2rem;
+  } 
+ &-block{
+  margin-top: 2rem;  
+ }  
+}
+.section-header{
+ margin-bottom: 0;
 }
 }
 @media (max-width: 767px) {

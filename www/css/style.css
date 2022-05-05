@@ -77,9 +77,17 @@ section {
 }
 .section-header {
   margin: 2rem 0 10rem ;
+  text-align: center;
+}
+.section-header_light {
+  color: #ffffff;
+}
+.section-header h2 {
   font-family: 'ProximaNova_Bold', sans-serif;
   font-size: 3.6rem;
-  text-align: center;
+}
+.section-header p {
+  font-size: 1.8rem;
 }
 /*main*/
 .main {
@@ -152,7 +160,7 @@ section {
   border-radius: 5px;
   padding: 1.2rem;
 }
-/*.main-form */label {
+.main-form label {
   position: absolute;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
@@ -234,6 +242,63 @@ section {
   background: url(../img/right.svg) center no-repeat;
   background-size: 70%;
 }
+/*блок с ценами*/
+.price {
+  background: #286c0a url(../img/prices.jpg) center;
+  /*оформление прайс листа*/
+}
+.price-btn {
+  text-align: right;
+}
+.price p {
+  margin-top: 2rem;
+}
+.price-header-btn {
+  margin-top: 4rem;
+}
+.price-block {
+  padding: 1rem 3rem 4rem;
+  min-height: 65rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+          box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+  text-align: center;
+}
+.price-block h4 {
+  margin: 3rem 0;
+  font-size: 1.9rem;
+  font-family: 'ProximaNova_Bold', sans-serif;
+}
+.price-block img {
+  width: 100%;
+  max-width: 30rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.price-tag {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.9rem;
+  font-family: 'ProximaNova_Bold', sans-serif;
+}
+.price-list {
+  padding: 0;
+  margin-bottom: 3rem;
+  list-style: none;
+  min-height: 14rem;
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+.price-list li:before {
+  content: '';
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(../img/like.svg) no-repeat center;
+  background-size: 90%;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+}
 /*оформление мод. окна*/
 .popup {
   display: none;
@@ -283,6 +348,20 @@ section {
   .main-title {
     text-align: center;
     margin-bottom: 5rem;
+  }
+  .price-btn {
+    text-align: center;
+    padding: 3rem 0;
+  }
+  .price-header-btn {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .price-block {
+    margin-top: 2rem;
+  }
+  .section-header {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767px) {
