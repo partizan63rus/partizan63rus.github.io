@@ -1,79 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-
-    <title>Starter Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-
-  <body>
-    <div class="header">
-      <h1>Ответы на вопросы</h1>
-      <h3>Которые нам задают чаще всего</h3>
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="img/logo.jpeg" alt="Логотип">
     </div>
-   
-  <div class="page" id="accordeon">
-      <div class="acc-head">
-        <p>Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</p>
-      </div>
-      <div class="acc-body">
-        <p>Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</p>
-      </div>
-      <div class="acc-head">
-        <p>Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</p>
-      </div>
-      <div class="acc-body">
-        Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.
-      </div>
-      <div class="acc-head">
-        <p>Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</p>
-      </div>
-      <div class="acc-body">
-        Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.
-      </div>
-       <div class="acc-head">
-        <p>Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</p>
-      </div>
-      <div class="acc-body">
-        Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.
-      </div>
-       <div class="acc-head">
-        <p>Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</p>
-      </div>
-      <div class="acc-body">
-        Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.
-      </div>
-  </div>
-
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-
-<script>
-   $(document).ready(function() {
-  //прикрепляем клик по заголовкам acc-head
-  $('#accordeon .acc-head').on('click', f_acc);
-});
-
-function f_acc(){
-//скрываем все кроме того, что должны открыть
-  $('#accordeon .acc-body').not($(this).next()).slideUp(1000);
-// открываем или скрываем блок под заголовоком, по которому кликнули
-    $(this).next().slideToggle(2000);
-}
-</script>
-
-    
-  </body>
+    <div>
+      <h1>Вступление H1</h1>
+      <p>Это текст моего первого задания.</p>
+      <p>Не верится, но мне уже удается писать свой первый код на HTML.</p>
+    </div>
+  </header>
+  <section>
+    <h2>Что дальше? Н2</h2>
+    <p>Дальше, я буду получать все больше и больше опыта в разработке сайтов, чтобы достичь новых вершин!
+    <a href="https://www.google.com" title="ссылка">Прочитать больше в Google</a>
+  </section>
+  <section>
+    <h2>Что я буду уметь? Н2</h2>
+    <p>Создавать вот такие замечательные формы:</p>
+    <form action="#">
+      <input type="text" name="text" placeholder="Имя" required>
+      <input type="email" name="email" placeholder="email" required>
+      <input type="tel" name="phone" placeholder="Телефон" required>
+      <button type="submit">Отправить форму</button>
+    </form>
+    <div>
+      <p>А также я научусь создавать списки:</p>
+      <ul>
+        <li>С одним пунктом</li>
+        <li>С несколькими пунктами</li>
+        <li>И даже с тремя отдельными пунктами</li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <h2>Отличное начало! Н2</h2>
+    <a href="https://my.wayup.in/lesson/1210">Перейти на страницу первого занятия курса</a>
+  </footer>
+</body>
 </html>
