@@ -389,6 +389,10 @@ section {
   .logo {
     padding: 3.4rem 0 4.6rem 0;
   }
+   .price-block{
+    margin: 12px 50px 0 50px;
+  }
+
 }
 @media (max-width: 320px) {
   html {
@@ -401,4 +405,8 @@ section {
   .logo {
     padding: 3.4rem 0 4.6rem 0;
   }
+.price-block{
+    margin: 12px 20px 0 20px;
+  }
+  
 }
