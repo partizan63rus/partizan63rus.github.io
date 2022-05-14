@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Homework</title>
+  <link href="css/animate.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,14 +13,14 @@
 <body>
  <header class="header">
    <div class="container">
-     <img src="img/logo.png" alt="WAYUP" class="logo">
+     <img src="img/logo.png" alt="WAYUP" class="logo wow zoomInDown" data-wow-delay=1s data-wow-duration=2s>
      <div class="wraper">
        <div class="offer">
          <h1 class="title">С помощью верстки <br>я создам ту жизнь, о которой <br> <span>мечтаю!</span></h1>
          <p class="intro">Мои стремления + настойчивость позволят мне достичь чего угодно. Я не верю в это. Я знаю это на 100%. Меня не остановить!</p>
-         <a href="#" class="btn">Двигаться к мечте!</a>
+         <a href="#" class="btn wow bounce" data-wow-iteration=infinite data-wow-delay=1s data-wow-duration=2s>Двигаться к мечте!</a>
        </div>
-       <img src="img/desctop.png" alt="desktop" class="desktop">
+       <img src="img/desctop.png" alt="desktop" class="desktop wow flip" data-wow-delay=1s data-wow-duration=1s>
      </div>
    </div>
  </header>
@@ -52,7 +53,7 @@
         <input type="email"   placeholder="E-mail" name="email" class="input" required>
         <input type="tel" placeholder="Телефон" name="Phone" class="input" required>
         <input type="text" placeholder="Куда я полечу в ближайшее время" name="text" class="input" required> 
-      <button class="btn form-btn">Двигатся к мечте!</button>
+      <button class="btn form-btn wow wobble" data-wow-iteration=infinite data-wow-delay=1s data-wow-duration=2s>Двигатся к мечте!</button>
      </form>
    </div>
  </section>
@@ -61,5 +62,18 @@
    <p class="footer-text">© Все мои мечты защищены моим трудолюбием</p>
   </div>
  </footer>
+
+
+ <script src="js/wow.js"></script> 
+    <script>
+      wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+})
+wow.init();
+  </script> 
 </body>
 </html>

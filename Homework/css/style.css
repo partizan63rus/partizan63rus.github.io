@@ -19,12 +19,17 @@ h1 h2 h3{
 }
 
 p{
+	width: auto;
 	line-height: 27px;
 }
 
 .container{
 	width: 1170px;
 	margin: 0 auto;
+}
+
+.wow {
+visibility: hidden;
 }
 
 .header{
@@ -62,7 +67,7 @@ color: #fff;
 }
 
 .intro{
-	width: 400px;
+	/*width: 400px;*/
 	padding-bottom: 21px;
 }
 
