@@ -70,6 +70,9 @@ textarea:focus {
 .btn:hover {
   cursor: pointer;
   background-color: #d69702;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 /*типография*/
 section {

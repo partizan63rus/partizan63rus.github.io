@@ -11,6 +11,7 @@
     <title>Штукатурка стен</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -37,7 +38,7 @@
                         order-sm-1 order-lg-3">
        <div class="wrap">
         <div class="wrap-block">
-         <button class="btn w-100 popup-btn">
+         <button class="btn w-100 popup-btn wow swing" data-wow-duration=5s data-wow-offset=20 data-wow-delay=2s data-wow-iteration=5>
            получить инструкцию
          </button>
         </div>
@@ -164,7 +165,7 @@
                         <!-- контент -->
     <div class="row justify-content-sm-center">
 
-      <div class="col-md-4 col-sm-8 ">
+      <div class="col-md-4 col-sm-8">
         <div class="price-block">
           <h4>Штукатурка вашим материалом</h4>
           <img src="img/1.jpg" alt="Штукатурка вашим материалом">
@@ -226,7 +227,7 @@
     <!-- само (белое) мод. окно -->
      <div class="popup-dialog">
       <!-- содержимое мод. окно -->
-       <div class="popup-content">
+       <div class="popup-content wow slideInUp">
          <button class="popup-close">&times;</button>
          <h4 class="popup-header">
            Заинтересовало?
@@ -241,12 +242,16 @@
             <input class="main-form-input" type="text">
             <label for="#">Сообщения</label> 
             <textarea class="main-form-input" rows="5"></textarea>
-            <button class="main-form-btn btn" type="sumbit">Оставьте заявку</button>
+            <button class="main-form-btn btn wow flip" data-wow-delay=1s data-wow-duration=2s type="sumbit">Оставьте заявку</button>
           </form>
        </div>
      </div>
    </div>
-      
+    <script src="js/wow.js"></script> 
+    <script>
+      wow = new WOW;
+      wow.init();
+  </script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <!-- подключаем стили слик слайдер -->
    <link rel="stylesheet" href="slick/slick.css">
