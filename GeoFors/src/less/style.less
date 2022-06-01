@@ -194,31 +194,23 @@ background: radial-gradient(circle, rgba(136,247,240,1) 0%, rgba(47,178,215,1) 7
 .main{
 	background: url(../img/geo-img.jpg)no-repeat center center;
 	background-size: cover;
-	text-shadow: 
-		-0   -2px 0   #000000,
-		 0   -2px 0   #000000,
-		-0    2px 0   #000000,
-		 0    2px 0   #000000,
-		-2px -0   0   #000000,
-		 2px -0   0   #000000,
-		-2px  0   0   #000000,
-		 2px  0   0   #000000,
-		-1px -2px 0   #000000,
-		 1px -2px 0   #000000,
-		-1px  2px 0   #000000,
-		 1px  2px 0   #000000,
-		-2px -1px 0   #000000,
-		 2px -1px 0   #000000,
-		-2px  1px 0   #000000,
-		 2px  1px 0   #000000,
-		-2px -2px 0   #000000,
-		 2px -2px 0   #000000,
-		-2px  2px 0   #000000,
-		 2px  2px 0   #000000,
-		-2px -2px 0   #000000,
-		 2px -2px 0   #000000,
-		-2px  2px 0   #000000,
-		 2px  2px 0   #000000;
+	text-shadow: -0   -1px 0   #000000,
+		            0   -1px 0   #000000,
+		           -0    1px 0   #000000,
+		            0    1px 0   #000000,
+		           -1px -0   0   #000000,
+		            1px -0   0   #000000,
+		           -1px  0   0   #000000,
+		            1px  0   0   #000000,
+		           -1px -1px 0   #000000,
+		            1px -1px 0   #000000,
+		           -1px  1px 0   #000000,
+		            1px  1px 0   #000000,
+		           -1px -1px 0   #000000,
+		            1px -1px 0   #000000,
+		           -1px  1px 0   #000000,
+		            1px  1px 0   #000000;
+		
 	&-info{
 		display: flex;
 		justify-content: space-between;
@@ -307,7 +299,7 @@ background: radial-gradient(circle, rgba(136,247,240,1) 0%, rgba(47,178,215,1) 7
 		text-align: center;
 		display: flex;
 	&_item{
-		background: #E0FFFF;
+		background:@light;
 		box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.5);
 		margin-right: 2rem;
 		margin-bottom: 5rem;
@@ -425,7 +417,60 @@ img{
 
 		
 	}
-}                 
+}  
+
+                             /*Преимущества*/
+                              
+.advantage{
+	margin-bottom: 15rem;
+	&-text{
+		h2{
+		margin-top: 7rem;
+		font-size: 5rem;
+		text-align: center;
+		.bold()
+	}
+	}
+		&-text:after {
+    content: '';
+    display: block;
+    margin: 4rem auto 0;
+    width: 15rem;
+    border-top: 2px solid #444;
+}
+	&-contant{
+		display: flex;
+	  justify-content:space-between;
+		&_item{
+			background:url(../img/advantage.png) no-repeat center center;
+      background-size:12rem;
+			padding-right: rem;
+			text-align: center;
+			width: 30rem;
+			h3{
+				padding-top: 25rem;
+				font-size: 2.5rem;
+				.bold()
+			}
+			p{
+				font-size: 2rem;
+			}
+		}
+		
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 // оформление форм 
@@ -472,7 +517,7 @@ img{
  top: 0;
  bottom: 0;
  right: 0;
- width: 100%;
+ width: 200rem;
  height: 100%;
  z-index: 9;
  background-color: rgba(0, 0, 0, 0.5);
@@ -480,7 +525,7 @@ img{
  &-content {
  position: fixed;
  text-align: center;
- font-size: 1.5rem;
+ font-size: 2.5rem;
  left: 50%;
  top: 10%;
  background-color: @light;
@@ -622,7 +667,7 @@ img{
     padding: 3em 10% 4em;
   }
   .cd-modal-content p {
-    font-size: 2.4rem;
+    font-size: 4rem;
   }
 }
 
@@ -766,12 +811,7 @@ img{
 	}
 }
 .work{
-&-list_item{
-   p{
-   	padding-left: 7rem;
-   	padding-right: 7rem;
-   }
-	}
+
 &-button{
 	margin-top: 5rem;
 }	
@@ -801,14 +841,17 @@ img{
 }
 .main{
 	background-size: cover;
+&-content{
+	padding-bottom: 40rem;
+}
 }
 .work{
 	&-header{
 		font-size: 7rem	;
 	}
 &-list_item{
-	margin-right: 5rem;
-	margin-left: 5rem;
+	margin-right: 7rem;
+	margin-left: 7rem;
 		img{
 			padding: 2rem 1rem;
 			width: 40rem;
@@ -819,7 +862,7 @@ img{
 			font-size: 4rem;
 		}
 		p{
-			padding: 0 6rem;
+			padding: 0 10rem;
 			font-size: 3rem;
 		}
 		a{
@@ -861,6 +904,9 @@ img{
 		}
 	}
 }
+.cd-modal-content p {
+    font-size: 4rem;
+  }
 }
 
 
@@ -873,6 +919,27 @@ img{
 	}
 .container{
 	width: 100%;
+}
+.main{
+	background-size: cover;
+&-content{
+	padding-bottom: 40rem;
+	&-text{
+		padding-top: 5rem;
+	}
+}
+}
+.work{
+&-list_item{
+	margin-left: 15rem;
+	margin-right: 15rem;
+	a{
+		font-size: 3.5rem;
+	}
+}
+&-btn{
+	font-size: 3.5rem;
+}	
 }
 }
 
