@@ -175,9 +175,9 @@ textarea:focus {
 }
 /* Название*/
 .main {
-  background: url(../img/geo-img.jpg) no-repeat center center;
+  /*background: url(../img/geo-img.jpg)no-repeat center center;*/
   background-size: cover;
-  text-shadow: 0 -1px 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 1px 0 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+  text-shadow: 1px 0 1px #000000, 0 1px 1px #000000, -1px 0 1px #000000, 0 -1px 1px #000000;
 }
 .main-info {
   display: -webkit-box;
@@ -414,7 +414,7 @@ textarea:focus {
 }
 .form-input {
   display: block;
-  font-size: 16px;
+  font-size: 2rem;
   width: 100%;
   margin: 2.5rem 0;
   border: 1px solid #dddddd;
@@ -426,7 +426,7 @@ textarea:focus {
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   padding: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   background-color: #ffffff;
 }
 .form-btn {

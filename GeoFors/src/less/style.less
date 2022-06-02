@@ -192,25 +192,12 @@ background: radial-gradient(circle, rgba(136,247,240,1) 0%, rgba(47,178,215,1) 7
                  /* Название*/
 
 .main{
-	background: url(../img/geo-img.jpg)no-repeat center center;
+	/*background: url(../img/geo-img.jpg)no-repeat center center;*/
 	background-size: cover;
-	text-shadow: -0   -1px 0   #000000,
-		            0   -1px 0   #000000,
-		           -0    1px 0   #000000,
-		            0    1px 0   #000000,
-		           -1px -0   0   #000000,
-		            1px -0   0   #000000,
-		           -1px  0   0   #000000,
-		            1px  0   0   #000000,
-		           -1px -1px 0   #000000,
-		            1px -1px 0   #000000,
-		           -1px  1px 0   #000000,
-		            1px  1px 0   #000000,
-		           -1px -1px 0   #000000,
-		            1px -1px 0   #000000,
-		           -1px  1px 0   #000000,
-		            1px  1px 0   #000000;
-		
+	text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;
 	&-info{
 		display: flex;
 		justify-content: space-between;
@@ -478,7 +465,7 @@ img{
             /*поле для ввода*/
  &-input {
   display: block;
-  font-size: 16px;
+  font-size: 2rem;
   width: 100%;
   margin: 2.5rem 0;
   border: 1px solid @border-input;
@@ -490,7 +477,7 @@ img{
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
   padding: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   background-color: @light;
  }  
              /*отправить заявку*/
@@ -510,6 +497,10 @@ img{
 
 
 /*оформление мод. окна*/
+
+
+
+
 .popup {
  display: none;	
  position: fixed;
