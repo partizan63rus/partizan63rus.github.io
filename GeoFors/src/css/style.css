@@ -116,6 +116,7 @@ textarea:focus {
   font-size: 2rem	;
 }
 .menu > li {
+  z-index: 20;
   margin: 0 2rem;
   overflow: hidden;
 }
