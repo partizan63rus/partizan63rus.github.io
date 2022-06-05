@@ -244,6 +244,70 @@ textarea:focus {
   font-size: 3rem;
   font-family: 'ProximaNova_Bold', sans-serif;
 }
+/*Преимущества*/
+.advantage {
+  margin-bottom: 15rem;
+}
+.advantage-text h2 {
+  margin-top: 7rem;
+  font-size: 5rem;
+  text-align: center;
+  font-family: 'ProximaNova_Bold', sans-serif;
+}
+.advantage-text:after {
+  content: '';
+  display: block;
+  margin: 4rem auto 0;
+  width: 15rem;
+  border-top: 2px solid #444;
+}
+.advantage-contant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.advantage-contant_item {
+  background: url(../img/advantage.png) no-repeat center center;
+  background-size: 12rem;
+  padding-right: rem;
+  text-align: center;
+  width: 30rem;
+}
+.advantage-contant_item h3 {
+  padding-top: 25rem;
+  font-size: 2.5rem;
+  font-family: 'ProximaNova_Bold', sans-serif;
+}
+.advantage-contant_item p {
+  font-size: 2rem;
+}
+/* паралакс*/
+.parallax-window {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  background-attachment: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+.parallax-window h1 {
+  position: absolute;
+  color: #ffffff;
+  text-shadow: 1px 0 1px #000000, 0 1px 1px #000000, -1px 0 1px #000000, 0 -1px 1px #000000;
+  font-size: 10rem;
+  font-family: 'ProximaNova_Bold', sans-serif;
+}
 /*Виды работ*/
 .work {
   padding-bottom: 10rem;
@@ -367,46 +431,6 @@ textarea:focus {
   padding-right: 1rem;
   font-size: 2rem;
   font-family: 'ProximaNova_Bold', sans-serif;
-}
-/*Преимущества*/
-.advantage {
-  margin-bottom: 15rem;
-}
-.advantage-text h2 {
-  margin-top: 7rem;
-  font-size: 5rem;
-  text-align: center;
-  font-family: 'ProximaNova_Bold', sans-serif;
-}
-.advantage-text:after {
-  content: '';
-  display: block;
-  margin: 4rem auto 0;
-  width: 15rem;
-  border-top: 2px solid #444;
-}
-.advantage-contant {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.advantage-contant_item {
-  background: url(../img/advantage.png) no-repeat center center;
-  background-size: 12rem;
-  padding-right: rem;
-  text-align: center;
-  width: 30rem;
-}
-.advantage-contant_item h3 {
-  padding-top: 25rem;
-  font-size: 2.5rem;
-  font-family: 'ProximaNova_Bold', sans-serif;
-}
-.advantage-contant_item p {
-  font-size: 2rem;
 }
 .form {
   /*поле для ввода*/

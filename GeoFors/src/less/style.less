@@ -270,6 +270,76 @@ background: radial-gradient(circle, rgba(136,247,240,1) 0%, rgba(47,178,215,1) 7
 	}
 }
 
+
+                             /*Преимущества*/
+                              
+.advantage{
+	margin-bottom: 15rem;
+	&-text{
+		h2{
+		margin-top: 7rem;
+		font-size: 5rem;
+		text-align: center;
+		.bold()
+	}
+	}
+		&-text:after {
+    content: '';
+    display: block;
+    margin: 4rem auto 0;
+    width: 15rem;
+    border-top: 2px solid #444;
+}
+	&-contant{
+		display: flex;
+	  justify-content:space-between;
+		&_item{
+			background:url(../img/advantage.png) no-repeat center center;
+      background-size:12rem;
+			padding-right: rem;
+			text-align: center;
+			width: 30rem;
+			h3{
+				padding-top: 25rem;
+				font-size: 2.5rem;
+				.bold()
+			}
+			p{
+				font-size: 2rem;
+			}
+		}
+		
+
+	}
+}
+
+
+                   /* паралакс*/
+
+.parallax-window {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    background-attachment: fixed;
+    background: rgba(0,0,0,.6);
+    position: relative;
+   h1{
+   	position: absolute;
+   	color: @light;
+   	text-shadow: 1px 0 1px #000, 
+                 0 1px 1px #000, 
+                 -1px 0 1px #000, 
+                 0 -1px 1px #000;
+   	font-size: 10rem;
+   	.bold()
+   } 
+}
+
+
+
+
               /*Виды работ*/
 
 
@@ -407,47 +477,6 @@ img{
 	}
 }  
 
-                             /*Преимущества*/
-                              
-.advantage{
-	margin-bottom: 15rem;
-	&-text{
-		h2{
-		margin-top: 7rem;
-		font-size: 5rem;
-		text-align: center;
-		.bold()
-	}
-	}
-		&-text:after {
-    content: '';
-    display: block;
-    margin: 4rem auto 0;
-    width: 15rem;
-    border-top: 2px solid #444;
-}
-	&-contant{
-		display: flex;
-	  justify-content:space-between;
-		&_item{
-			background:url(../img/advantage.png) no-repeat center center;
-      background-size:12rem;
-			padding-right: rem;
-			text-align: center;
-			width: 30rem;
-			h3{
-				padding-top: 25rem;
-				font-size: 2.5rem;
-				.bold()
-			}
-			p{
-				font-size: 2rem;
-			}
-		}
-		
-
-	}
-}
 
 
 
