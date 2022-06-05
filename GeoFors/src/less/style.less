@@ -321,12 +321,12 @@ background: radial-gradient(circle, rgba(136,247,240,1) 0%, rgba(47,178,215,1) 7
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
     background: transparent;
     background-attachment: fixed;
     background: rgba(0,0,0,.6);
-    position: relative;
+    
    h1{
-   	position: absolute;
    	color: @light;
    	text-shadow: 1px 0 1px #000, 
                  0 1px 1px #000, 
@@ -866,6 +866,12 @@ img{
 	padding-bottom: 40rem;
 }
 }
+
+.parallax-window{
+	
+	object-fit: contain;
+}
+
 .work{
 	&-header{
 		font-size: 7rem	;
@@ -949,6 +955,10 @@ img{
 		padding-top: 5rem;
 	}
 }
+}
+.parallax-window{
+	
+	object-fit: cover;
 }
 .work{
 &-list_item{

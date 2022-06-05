@@ -296,13 +296,12 @@ textarea:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-size: cover;
   background: transparent;
   background-attachment: fixed;
   background: rgba(0, 0, 0, 0.6);
-  position: relative;
 }
 .parallax-window h1 {
-  position: absolute;
   color: #ffffff;
   text-shadow: 1px 0 1px #000000, 0 1px 1px #000000, -1px 0 1px #000000, 0 -1px 1px #000000;
   font-size: 10rem;
@@ -758,6 +757,10 @@ textarea:focus {
   .main-content {
     padding-bottom: 40rem;
   }
+  .parallax-window {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .work-header {
     font-size: 7rem	;
   }
@@ -831,6 +834,10 @@ textarea:focus {
   }
   .main-content-text {
     padding-top: 5rem;
+  }
+  .parallax-window {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .work-list_item {
     margin-left: 15rem;
