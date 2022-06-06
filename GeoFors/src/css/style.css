@@ -176,7 +176,8 @@ textarea:focus {
 }
 /* Название*/
 .main {
-  /*background: url(../img/geo-img.jpg)no-repeat center center;*/
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 99%, 61% 100%, 0 79%);
+          clip-path: polygon(0 0, 100% 0, 100% 99%, 61% 100%, 0 79%);
   background-size: cover;
   text-shadow: 1px 0 1px #000000, 0 1px 1px #000000, -1px 0 1px #000000, 0 -1px 1px #000000;
 }
@@ -232,7 +233,7 @@ textarea:focus {
 }
 .main-content {
   margin: 15rem 17rem 0rem 17rem;
-  padding-bottom: 28rem;
+  padding-bottom: 20rem;
   text-align: center;
   color: #0eb1af;
 }
@@ -246,10 +247,10 @@ textarea:focus {
 }
 /*Преимущества*/
 .advantage {
-  margin-bottom: 15rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 .advantage-text h2 {
-  margin-top: 7rem;
   font-size: 5rem;
   text-align: center;
   font-family: 'ProximaNova_Bold', sans-serif;
@@ -272,7 +273,6 @@ textarea:focus {
 .advantage-contant_item {
   background: url(../img/advantage.png) no-repeat center center;
   background-size: 12rem;
-  padding-right: rem;
   text-align: center;
   width: 30rem;
 }
@@ -284,33 +284,11 @@ textarea:focus {
 .advantage-contant_item p {
   font-size: 2rem;
 }
-/* паралакс*/
-.parallax-window {
-  min-height: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-size: cover;
-  background: transparent;
-  background-attachment: fixed;
-  background: rgba(0, 0, 0, 0.6);
-}
-.parallax-window h1 {
-  color: #ffffff;
-  text-shadow: 1px 0 1px #000000, 0 1px 1px #000000, -1px 0 1px #000000, 0 -1px 1px #000000;
-  font-size: 10rem;
-  font-family: 'ProximaNova_Bold', sans-serif;
-}
 /*Виды работ*/
 .work {
   padding-bottom: 10rem;
-  background: #E6E6FA;
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.6);
 }
 .work-header {
   padding-top: 10rem;
@@ -760,6 +738,9 @@ textarea:focus {
   .parallax-window {
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .work {
+    background-size: cover;
   }
   .work-header {
     font-size: 7rem	;
