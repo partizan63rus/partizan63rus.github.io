@@ -233,7 +233,7 @@ textarea:focus {
 }
 .main-content {
   margin: 15rem 17rem 0rem 17rem;
-  padding-bottom: 20rem;
+  padding-bottom: 27rem;
   text-align: center;
   color: #0eb1af;
 }
@@ -299,6 +299,9 @@ textarea:focus {
   font-family: 'ProximaNova_Bold', sans-serif;
 }
 .work-list {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -310,38 +313,39 @@ textarea:focus {
           box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.5);
   margin-right: 2rem;
   margin-bottom: 5rem;
+  /*p{
+			overflow: hidden;
+	    position: relative;
+	    height: 25rem;
+			font-size: 2rem;
+			padding: 3rem 2rem;
+			margin-bottom: 3rem;
+		}
+		p:after{
+			content: "";
+	    text-align: right;
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    width: 70%;
+	    height: 1.2em;
+	    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 100%);
+	    pointer-events: none;
+		}*/
 }
 .work-list_item img {
+  margin-top: 2rem;
   padding: 2rem 1rem;
   width: 25rem;
   height: 25rem;
 }
 .work-list_item h3 {
   height: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
   padding: 0rem 1rem;
-  font-size: 2.5rem;
-  font-family: 'ProximaNova_Bold', sans-serif;
-}
-.work-list_item p {
-  overflow: hidden;
-  position: relative;
-  height: 25rem;
   font-size: 2rem;
-  padding: 3rem 2rem;
-  margin-bottom: 3rem;
-}
-.work-list_item p:after {
-  content: "";
-  text-align: right;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 70%;
-  height: 1.2em;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#ffffff));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 100%);
-  pointer-events: none;
+  font-family: 'ProximaNova_Bold', sans-serif;
 }
 .work-button {
   text-align: center;
@@ -426,7 +430,8 @@ textarea:focus {
 }
 /*отзовы*/
 .response {
-  background-color: #B0E0E6;
+  background: #88f7f0;
+  background: radial-gradient(circle, #88f7f0 0%, #2fb2d7 75%);
   padding-bottom: 10rem;
 }
 .response-text {
@@ -685,6 +690,64 @@ dl {
           flex-direction: column;
   text-align: center;
 }
+/* наши контакты*/
+.contact {
+  margin-top: 5rem;
+}
+.contact h2 {
+  margin-bottom: 5rem;
+}
+.contact-map {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5rem;
+}
+.contact-content {
+  background: #0079ee;
+  background: -webkit-gradient(linear, left top, right top, from(#0079ee), color-stop(50%, #3cc5f4), to(#0079ee));
+  background: linear-gradient(90deg, #0079ee 0%, #3cc5f4 50%, #0079ee 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding: 5rem 10rem;
+  color: #ffffff;
+  font-size: 2rem;
+  text-shadow: 1px 0 1px #000000, 0 1px 1px #000000, -1px 0 1px #000000, 0 -1px 1px #000000;
+}
+.contact-content h3 {
+  font-size: 3rem;
+}
+.contact-content-item {
+  background: url(../img/icon/addres.png) no-repeat top center;
+  background-size: 4rem;
+  padding-top: 5rem;
+  margin-right: 3rem;
+}
+.contact-content-phone {
+  background: url(../img/icon/phone.png) no-repeat top center;
+  background-size: 4rem;
+  padding-top: 5rem;
+  margin-right: 3rem;
+}
+.contact-content-phone span {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+.contact-content-email {
+  background: url(../img/icon/email.png) no-repeat top center;
+  background-size: 4rem;
+  padding-top: 5rem;
+  margin-right: 3rem;
+}
+.contact-content-work {
+  background: url(../img/icon/clock.png) no-repeat top center;
+  background-size: 4rem;
+  padding-top: 5rem;
+}
 .form {
   /*поле для ввода*/
   /*подписи к полям*/
@@ -853,14 +916,6 @@ dl {
   transition: opacity 0.3s 0.3s, transform 0.3s 0.3s;
   transition: opacity 0.3s 0.3s, transform 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
 }
-@media only screen and (min-width: 768px) {
-  .cd-modal-content {
-    padding: 3em 10% 4em;
-  }
-  .cd-modal-content p {
-    font-size: 4rem;
-  }
-}
 /* -------------------------------- 
 
  Cover Layer - hide main content when modal is fired
@@ -974,31 +1029,37 @@ dl {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
-}
-.main-header {
-  color: #ffffff;
-}
-.main-graphic {
-  margin-left: 0;
-}
-.main-graphic-clock {
-  padding-top: 1rem;
-}
-.main-phone {
-  padding-top: 2rem;
-  margin-right: 0;
-}
-.work-button {
-  margin-top: 5rem;
-}
-.company img {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-.company-description {
-  padding-top: 3rem;
-  padding-left: 4rem;
-  font-size: 1rem;
+  .main-header {
+    color: #ffffff;
+  }
+  .main-graphic {
+    margin-left: 0;
+  }
+  .main-graphic-clock {
+    padding-top: 1rem;
+  }
+  .main-phone {
+    padding-top: 2rem;
+    margin-right: 0;
+  }
+  .work-button {
+    margin-top: 5rem;
+  }
+  .company img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .company-description {
+    padding-top: 3rem;
+    padding-left: 4rem;
+    font-size: 1rem;
+  }
+  .cd-modal-content {
+    padding: 3em 10% 4em;
+  }
+  .cd-modal-content p {
+    font-size: 4rem;
+  }
 }
 /*576-767*/
 @media (max-width: 767px) {

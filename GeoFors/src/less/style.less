@@ -256,7 +256,7 @@ clip-path: polygon(0 0, 100% 0, 100% 35%, 100% 85%, 90% 94%, 75% 100%, 49% 100%,
 	}
 	&-content{
 		margin: 15rem 17rem 0rem 17rem;
-		padding-bottom: 20rem;
+		padding-bottom: 27rem;
 		text-align: center;
   color: #0eb1af;
   &-title{
@@ -335,6 +335,7 @@ clip-path: polygon(0 0, 100% 0, 100% 35%, 100% 85%, 90% 94%, 75% 100%, 49% 100%,
 		.bold()
 	}
 	&-list{
+		justify-content:space-between;
 		text-align: center;
 		display: flex;
 	&_item{
@@ -343,6 +344,7 @@ clip-path: polygon(0 0, 100% 0, 100% 35%, 100% 85%, 90% 94%, 75% 100%, 49% 100%,
 		margin-right: 2rem;
 		margin-bottom: 5rem;
 		img{
+			margin-top: 2rem;
 			padding: 2rem 1rem;
 			width: 25rem;
 			height: 25rem;
@@ -350,12 +352,13 @@ clip-path: polygon(0 0, 100% 0, 100% 35%, 100% 85%, 90% 94%, 75% 100%, 49% 100%,
 		}
 		h3{
 			height: 3rem;
-			margin-bottom: 2rem;
+			margin-top: 3rem;
+			margin-bottom: 10rem;
 			padding: 0rem 1rem;
-			font-size: 2.5rem;
+			font-size: 2rem;
 			.bold()
 		}
-		p{
+		/*p{
 			overflow: hidden;
 	    position: relative;
 	    height: 25rem;
@@ -373,7 +376,7 @@ clip-path: polygon(0 0, 100% 0, 100% 35%, 100% 85%, 90% 94%, 75% 100%, 49% 100%,
 	    height: 1.2em;
 	    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 100%);
 	    pointer-events: none;
-		}
+		}*/
 	}
 
 	}
@@ -476,8 +479,9 @@ img{
                          /*отзовы*/
 
 .response{
-	background-color:#B0E0E6;
-	padding-bottom: 10rem;
+		background: rgb(136,247,240);
+    background: radial-gradient(circle, rgba(136,247,240,1) 0%, rgba(47,178,215,1) 75%);
+	  padding-bottom: 10rem;
 	&-text{
 		padding-top: 5rem;
 		padding-bottom: 5rem;
@@ -735,9 +739,64 @@ img{
     }
 
 
+                      /* наши контакты*/
 
-
-
+.contact{
+	margin-top: 5rem;
+	
+	h2{
+		margin-bottom: 5rem;
+	}
+	&-map{
+			width: 100%;
+			height: 100%;
+			margin-bottom: 5rem;
+		}
+	&-content{
+   background: rgb(0,121,238);
+   background: linear-gradient(90deg, rgba(0,121,238,1) 0%, rgba(60,197,244,1) 50%, rgba(0,121,238,1) 100%);
+   display: flex;
+   justify-content: space-between;
+	 text-align: center;
+	 padding: 5rem 10rem;
+	 color: @light;
+	 font-size: 2rem;
+	 	text-shadow: 1px 0 1px #000, 
+                 0 1px 1px #000, 
+                 -1px 0 1px #000, 
+                 0 -1px 1px #000;	
+	 h3{
+	 	font-size: 3rem;
+	 }
+   &-item{
+    background: url(../img/icon/addres.png)no-repeat top center;
+		background-size: 4rem;
+		padding-top:5rem;
+		margin-right: 3rem;
+   }
+   &-phone{
+   	background: url(../img/icon/phone.png)no-repeat top center;
+		background-size: 4rem;
+		padding-top:5rem;
+		margin-right: 3rem;
+		span{
+			font-style: italic;
+			font-size: 1.5rem;
+		}
+   }
+   &-email{
+   	background: url(../img/icon/email.png)no-repeat top center;
+		background-size: 4rem;
+		padding-top:5rem;
+    margin-right: 3rem;
+   }
+   &-work{
+   	background: url(../img/icon/clock.png)no-repeat top center;
+		background-size: 4rem;
+		padding-top:5rem;
+   }
+	}
+}
 
 
 
@@ -773,6 +832,28 @@ img{
 
  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -937,15 +1018,7 @@ img{
   -moz-transition: opacity 0.3s 0.3s, -moz-transform 0.3s 0.3s;
   transition: opacity 0.3s 0.3s, transform 0.3s 0.3s;
 }
-@media only screen and (min-width: 768px) {
-  .cd-modal-content {
-    padding: 3em 10% 4em;
-  }
-  .cd-modal-content p {
-    font-size: 4rem;
-  }
-}
-
+ 
 /* -------------------------------- 
 
  Cover Layer - hide main content when modal is fired
@@ -1075,7 +1148,7 @@ img{
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }	
-}
+
 .main{
 		&-header{
 	  color: @light;
@@ -1106,6 +1179,14 @@ img{
 		padding-left: 4rem;
 		font-size: 1rem;
 	}
+}
+ .cd-modal-content {
+    padding: 3em 10% 4em;
+  }
+  .cd-modal-content p {
+    font-size: 4rem;
+  }
+
 }
 
 
