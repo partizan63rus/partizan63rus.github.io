@@ -28,11 +28,11 @@
     <div class='menu-button'></div>
   </label>
     <ul class="menu">
-      <li><a href="#">Услуги</a></li>
-      <li><a href="#">О Нас</a></li>
+      <li><a href="#work-header">Услуги</a></li>
+      <li><a href="#company">О Нас</a></li>
       <li><a href="#">Консультация</a></li>
-      <li><a href="#">Отзовы</a></li>
-      <li><a href="#">Контакты</a></li>
+      <li><a href="#response-text-text">Отзовы</a></li>
+      <li><a href="#response-text">Контакты</a></li>
     </ul>
 </header> 
                    <!-- Название-->
@@ -102,7 +102,7 @@
 
 <section class="work parallax-window" data-parallax="scroll" data-androidFix="false" data-androidDisabled="false" data-image-src="img/geo-img-3.jpg">
   <div class="container">
-    <h2 class="work-header">Наши услуги</h2>
+    <h2 class="work-header" id="work-header">Наши услуги</h2>
     <div class="work-list">
         <div class=" work-list_item">
           <div class="work-list_img">
@@ -230,7 +230,7 @@
 
                                 <!-- О нас-->
 
-  <section class="company">
+  <section class="company" id="company">
     <div class="company-section">
     <div class="company-img">
       <img src="img/pichers.jpg" alt="О нас">
@@ -260,7 +260,7 @@
 
 <section class="response">
   <div class="container">
-    <h2 class="response-text">Отзовы</h2>
+    <h2 class="response-text" id="response-text-text">Отзовы</h2>
     <div id="slider" class="slider">
     <ol class="slider__indicators">
       <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
@@ -336,28 +336,42 @@
                               <!-- наши контакты -->
 
 <section class="contact">
-    <h2 class="response-text">Наши контакты</h2>
+    <h2 class="response-text" id="response-text">Наши контакты</h2>
       <div class="contact-map">
          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0985470acaafce193e5d15d0be8c47b89e8f04a74fbaa0d49dd62caac2033f82&amp;width=100%&amp;height=500px&amp;lang=ru_RU&amp;scroll=false"></script>
       </div>
       <div class="contact-content">
+ <div class="container">
+  <div class="row justify-content-md-between justify-content-sm-between">
+    <div class="col-md-3 col-sm-6 col-6">
         <div class="contact-content-item">
           <h3>Адрес</h3>
           <p>Самарская обл. г.Кинель ул.Чехова 11Б</p>
         </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-6">    
+        <div class="contact-content-email">
+           <h3>Почта</h3>
+           <a href="#">pimyakov@mail.ru</a>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-6">
         <div class="contact-content-phone">
            <h3>Телефон</h3>
            <p>+7(937) 2-111-263 <span>офис</span></p>
            <p>+7(917) 033-07-96 <span>специалист</span></p>
         </div>
-        <div class="contact-content-email">
-           <h3>Почта</h3>
-           <a href="#">pimyakov@mail.ru</a>
-        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-6">    
         <div class="contact-content-work">
           <h3>График работы</h3>
           <p>Пн-Пт: 9:00-17:00</p>
         </div>
+    </div>    
+  </div>
+</div>
+
+
       </div>
 </section>
 

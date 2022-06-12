@@ -413,7 +413,10 @@ textarea:focus {
 .company-description {
   padding-top: 10rem;
   padding-left: 10rem;
-  background: #00BFFF;
+  /*background: #00BFFF;*/
+  background: #00bfff;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #00bfff), color-stop(59%, #53c4eb), to(#005fd7));
+  background: linear-gradient(0deg, #00bfff 10%, #53c4eb 59%, #005fd7 100%);
   color: #ffffff;
   text-align: left;
   width: 50%;
@@ -430,8 +433,9 @@ textarea:focus {
 }
 /*отзовы*/
 .response {
-  background: #88f7f0;
-  background: radial-gradient(circle, #88f7f0 0%, #2fb2d7 75%);
+  background: #0079a2;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #0079a2), color-stop(59%, #53c4eb), to(#00bfff));
+  background: linear-gradient(0deg, #0079a2 10%, #53c4eb 59%, #00bfff 100%);
   padding-bottom: 10rem;
 }
 .response-text {
@@ -713,7 +717,7 @@ dl {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
-  padding: 5rem 10rem;
+  padding: 5rem;
   color: #ffffff;
   font-size: 2rem;
   text-shadow: 1px 0 1px #000000, 0 1px 1px #000000, -1px 0 1px #000000, 0 -1px 1px #000000;
@@ -725,13 +729,14 @@ dl {
   background: url(../img/icon/addres.png) no-repeat top center;
   background-size: 4rem;
   padding-top: 5rem;
-  margin-right: 3rem;
+}
+.contact-content-item p {
+  margin-bottom: 5rem;
 }
 .contact-content-phone {
   background: url(../img/icon/phone.png) no-repeat top center;
   background-size: 4rem;
   padding-top: 5rem;
-  margin-right: 3rem;
 }
 .contact-content-phone span {
   font-style: italic;
@@ -741,7 +746,9 @@ dl {
   background: url(../img/icon/email.png) no-repeat top center;
   background-size: 4rem;
   padding-top: 5rem;
-  margin-right: 3rem;
+}
+.contact-content-email a {
+  margin-bottom: 5rem;
 }
 .contact-content-work {
   background: url(../img/icon/clock.png) no-repeat top center;
@@ -997,6 +1004,7 @@ dl {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 5rem;
   }
   #menu-toggle ~ .menu li {
     height: 0;
