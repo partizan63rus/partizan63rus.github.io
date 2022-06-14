@@ -1,12 +1,8 @@
 
-h1 {
-	font: 24px/28px Arial, Tahoma, sans-serif;
-	margin: 50px 0;text-align: center;
-} 
 /* óñòàíàâëèâàåì ñëîé çàòåìíåíèÿ ôîíà,
   ** îïðäåëÿåì ïîçèöèè, öâåò è èíòåíñèâíîñòü çàòåìíåíèÿ  */
 .black-overlay{
-	display: none;
+	/*display: none;*/
 	position: absolute;
 	top: 0%;
 	left: 0%;
@@ -21,7 +17,7 @@ h1 {
 /* óñòàíàâëèâàåì ðèñóíîê îñíîâû,
   ** îïðäåëÿåì ðàçìåðû è ïîëîæåíèå íà ýêðàíå  */
 .envelope {
-	display: none;
+	/*display: none;*/
 	position: absolute;
 	width: 600px;
 	height: 340px;

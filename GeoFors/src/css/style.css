@@ -694,6 +694,47 @@ dl {
           flex-direction: column;
   text-align: center;
 }
+/*заявка на звонок*/
+.cons {
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+  background: #22bac3;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(36%, #22bac3), to(#0079a2));
+  background: linear-gradient(0deg, #22bac3 36%, #0079a2 100%);
+}
+.consultation {
+  background: #ffffff;
+  padding: 10rem 5rem 10rem 15rem ;
+  border: 1px solid #9f9f9f;
+}
+.consultation-name input {
+  font-size: 2.5rem	;
+  font-style: italic;
+  margin-bottom: 3rem;
+  display: block;
+  outline: 0;
+  width: 80%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px dotted #9f9f9f;
+}
+.consultation-text textarea {
+  width: 80%;
+  height: 24rem;
+  font-size: 2.5rem	;
+  font-style: italic;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px dotted #9f9f9f;
+}
+.consultation-btn {
+  padding: absolute;
+  -webkit-transform: translateY(-115%);
+          transform: translateY(-115%);
+  width: 30%;
+}
 /* наши контакты*/
 .contact {
   margin-top: 5rem;
@@ -754,6 +795,16 @@ dl {
   background: url(../img/icon/clock.png) no-repeat top center;
   background-size: 4rem;
   padding-top: 5rem;
+}
+.footer {
+  color: #ffffff;
+  text-align: center;
+  background-color: black;
+}
+.footer h2 {
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .form {
   /*поле для ввода*/
@@ -1177,6 +1228,21 @@ dl {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.5);
   }
+  .consultation-name input {
+    margin-bottom: 7rem;
+    font-size: 3rem;
+  }
+  .consultation-text textarea {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+  }
+  .consultation-btn {
+    width: 50%;
+    font-size: 3rem;
+    margin-left: 50%;
+    -webkit-transform: translateX(-70%);
+            transform: translateX(-70%);
+  }
 }
 /*320-575*/
 @media (max-width: 575px) {
@@ -1221,5 +1287,23 @@ dl {
   .slider__item_text {
     font-style: italic;
     font-size: 3rem;
+  }
+  .cons {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .consultation-name input {
+    margin-bottom: 7rem;
+    font-size: 4.2rem;
+  }
+  .consultation-text textarea {
+    margin-bottom: 5rem;
+    font-size: 4.2rem;
+  }
+  .consultation-btn {
+    font-size: 4.2rem;
+    margin-left: 50%;
+    -webkit-transform: translateX(-70%);
+            transform: translateX(-70%);
   }
 }
