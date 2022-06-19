@@ -405,10 +405,17 @@ textarea:focus {
 .company-img img {
   width: 100%;
   height: 100%;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -o-object-fit: cover;
-     object-fit: cover;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  /* Черно-белый фильтр для изображения */
+  -webkit-transition: 2.5s;
+  transition: 2.5s;
+  /* Время изменения цвета изображения */
+}
+.company-img img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  /* Цветное изображение при наведении */
 }
 .company-description {
   padding-top: 10rem;
@@ -735,6 +742,10 @@ dl {
           transform: translateY(-115%);
   width: 30%;
 }
+.consultation p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
 /* наши контакты*/
 .contact {
   margin-top: 5rem;
@@ -856,7 +867,7 @@ dl {
   background-color: #ffffff;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  padding: 4rem 6rem;
+  padding: 5rem 10rem;
 }
 .popup-form {
   margin-top: 3rem;
@@ -864,16 +875,17 @@ dl {
 }
 .popup-close {
   position: absolute;
-  top: -1.5rem;
-  right: -2rem;
-  width: 2rem;
+  top: -4rem;
+  right: -3rem;
+  width: 3rem;
   text-align: center;
   border: none;
   background-color: transparent;
-  font-size: 3rem;
+  font-size: 5rem;
   color: #ffffff;
 }
 .popup-header {
+  font-size: 3rem;
   font-family: 'ProximaNova_Bold', sans-serif;
 }
 /*стили модального окна*/
@@ -1239,9 +1251,45 @@ dl {
   .consultation-btn {
     width: 50%;
     font-size: 3rem;
+    margin-bottom: 10rem;
     margin-left: 50%;
     -webkit-transform: translateX(-70%);
             transform: translateX(-70%);
+  }
+  .consultation p {
+    font-size: 2.2rem;
+  }
+  .popup-content {
+    top: 20%;
+    padding: 13rem 10rem;
+  }
+  .form {
+    /*поле для ввода*/
+    /*подписи к полям*/
+    /*отправить заявку*/
+  }
+  .form-input {
+    display: block;
+    font-size: 3rem;
+    width: 50rem;
+    margin: 4rem 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 1.2rem;
+  }
+  .form label {
+    position: absolute;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    padding: 0.5rem;
+    font-size: 2.2rem;
+    background-color: #ffffff;
+  }
+  .form-btn {
+    display: block;
+    height: 5.5rem;
+    width: 100%;
+    font-size: 1.6rem;
   }
 }
 /*320-575*/
