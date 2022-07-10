@@ -525,6 +525,48 @@ section {
   background: url(../img/problems/checked-symbol1.png) center no-repeat;
   background-size: 70%;
 }
+.materials {
+  background: #ffffff url(../img/materials/materials-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.materials h2 {
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+.materials img {
+  padding-top: 7rem;
+  margin: 0 auto;
+}
+.materials-link {
+  padding-top: 2.5rem;
+  display: block;
+  color: #48bc15;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.materials-link:hover {
+  color: #368e10;
+}
+.materials-link:after {
+  content: '';
+  display: block;
+  width: 10rem;
+  border-bottom: 1px dotted #48bc15;
+  margin: 0 auto;
+}
+.materials-text {
+  margin-top: 8rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.materials-text a {
+  color: #48bc15;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.materials-text a:hover {
+  color: #368e10;
+}
 /*оформление мод. окна*/
 .popup {
   display: none;

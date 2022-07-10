@@ -582,6 +582,50 @@ h3{
   }
 }
 
+.materials{
+  background: @light url(../img/materials/materials-bg.jpg)no-repeat center;
+  background-size: cover;
+  h2{
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+  }
+ img{
+  padding-top: 7rem;
+ margin: 0 auto;
+ }
+
+ &-link{
+  padding-top: 2.5rem;
+  display: block;
+  color: @icon-color;
+  font-size: 1.6rem;
+  text-decoration: none;
+  &:hover{
+    color: darken(@icon-color, 10%);
+  }
+  &:after{
+    content: '';
+    display: block;
+    width: 10rem;
+    border-bottom: 1px dotted @icon-color;
+    margin: 0 auto;
+  }
+ }
+ &-text{
+  margin-top: 8rem;
+  text-align: center;
+  font-size: 2rem;
+  a{
+   color: @icon-color;
+  font-size: 2rem;
+  text-decoration: none; 
+  &:hover{
+    color: darken(@icon-color, 10%);
+  }
+  }
+ }
+}
+
 
 
 
